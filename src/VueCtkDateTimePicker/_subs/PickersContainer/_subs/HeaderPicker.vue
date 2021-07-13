@@ -142,7 +142,9 @@
         return this.dateTime.format('YYYY')
       },
       getDateFormatted () {
-        return this.dateTime.format('ddd D MMM')
+        // return this.dateTime.format('ddd D MMM')
+        // ①選択している日付をカレンダー内でMM月DD日（曜日）としたい
+        return this.dateTime.format('MM月DD日(ddd)')
       },
       isFormatTwelve () {
         return this.format ? (this.format.indexOf('a') > -1) || (this.format.indexOf('A') > -1) : false

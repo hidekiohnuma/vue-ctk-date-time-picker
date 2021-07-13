@@ -16,7 +16,9 @@ export default class Month {
   }
 
   getFormatted () {
-    return this.start.format('MMMM')
+    // return this.start.format('MMMM')
+    // ②選択している月を漢字ではなく数字としたい
+    return this.start.format('M月')
   }
 
   getYear () {
